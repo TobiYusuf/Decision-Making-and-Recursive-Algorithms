@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Function Tester</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Leap Year Checker -->
+    <div class="container">
+      <h1>JavaScript Function Tester</h1>
+      <h3>Leap Year Checker</h3>
+      <div class="col-md-4">
+        <label class="form-label" for="leapYearInput">Enter a year:</label>
+        <input class="form-control" type="number" id="leapYearInput" />
+      </div>
+
+      <button class="btn btn-primary" onclick="checkLeapYear()">
+        Check Leap Year
+      </button>
+      <p id="leapYearResult"></p>
+    </div>
+
+    <!-- Ticket Pricing -->
+    <div class="container">
+      <h3>Ticket Pricing</h3>
+      <div class="col-md-4">
+        <label class="form-label" for="ageInput">Enter your age:</label>
+        <input class="form-control" type="number" id="ageInput" />
+      </div>
+
+      <button class="btn btn-primary" onclick="getPrice()">
+        Get Ticket Price
+      </button>
+      <p id="priceResult"></p>
+    </div>
+
+    <!-- Fibonacci Sequence -->
+    <div class="container">
+      <h3>Fibonacci Sequence</h3>
+      <div class="col-md-4">
+        <label class="form-label" for="fibonacciInput"
+          >Enter a position (n):</label
+        >
+        <input class="form-control" type="number" id="fibonacciInput" />
+      </div>
+
+      <button onclick="getFibonacci()" class="btn btn-primary">
+        Get Fibonacci Number
+      </button>
+      <p id="fibonacciResult"></p>
+    </div>
+
+    <!-- Palindrome Checker -->
+    <div class="container">
+      <h3>Palindrome Checker</h3>
+      <div class="col-md-4">
+        <label class="form-label" for="palindromeInput">Enter a string:</label>
+        <input class="form-control" type="text" id="palindromeInput" />
+      </div>
+
+      <button class="btn btn-primary" onclick="checkPalindrome()">
+        Check Palindrome
+      </button>
+      <p id="palindromeResult"></p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
